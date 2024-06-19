@@ -31,7 +31,27 @@
             {
                 <div class="col cursor-pointer" onclick="window.location=
                     '@Url.Action("Produto", "Home", new{ id = produto.Id})'"></div>
+                    <div class="card shadow-sm py-4 pb-0">
+                        <img class="i,g-fluid px-4" src="@produto.Foto" alt="@produto.Nome">
+                        <div class="card-body px-4">
+                            <p class="card-text fw-bold lh-1">@produto.Nome</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label class="fs-4 fw-bolder">R$ @produto.Preco.ToString("N2")</label>
+                            </div>
+                        </div>
+                    </div>
             }
         </div>
     </div>
 </div>
+
+</main>
+
+<footer class="text-muted py-3">
+    <div class="container pb-3">
+        <p class="float-end mb-1">
+            <a href="#"><i class="bi bi-arrow-up-circle fs-5"></i></a>
+        </p>
+        <p class="mb-0>Para maiores informações entre em contato com a nossa loja."
+    </div>
+</footer>

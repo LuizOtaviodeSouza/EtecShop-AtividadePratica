@@ -12,7 +12,11 @@ public class Avaliacao
 
     [Required (ErrorMessage = "Informe o nome") ]
     [StringLength (60, ErrorMessage = "O título deve possuir até 60 caracteres") ]
-    public string Titul { get; set; }
+    public string Nome { get; set; }
+
+    [Required (ErrorMessage = "Informe o título") ]
+    [StringLength (60, ErrorMessage = "O título deve possuir até 60 caracteres") ]
+    public string Titulo { get; set; }
 
     [Required (ErrorMessage = "Escreva sua Avaliação") ]
     [StringLength (300, ErrorMessage = "A avaliação de possuir no máximo 300 caracteres") ]
